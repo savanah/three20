@@ -31,13 +31,13 @@
   _launcherView.pages = [NSArray arrayWithObjects:
     [NSArray arrayWithObjects:
       [[[TTLauncherItem alloc] initWithTitle:@"Button 1"
-                               image:@"bundle://Icon.png"
+                               image:@"http://www.subgenius.com/Graffix/dobbs.jpg"
                                URL:nil canDelete:YES] autorelease],
       [[[TTLauncherItem alloc] initWithTitle:@"Button 2"
-                               image:@"bundle://Icon.png"
+                               image:@"http://www.iconarchive.com/icons/deleket/flag/256/Canada-icon.png"
                                URL:nil canDelete:YES] autorelease],
       [[[TTLauncherItem alloc] initWithTitle:@"Button 3"
-                               image:@"bundle://Icon.png"
+                               image:@"http://www.subgenius.com/Graffix/dobbs.jpg"
                                URL:@"fb://item3" canDelete:YES] autorelease],
       [[[TTLauncherItem alloc] initWithTitle:@"Button 4"
                                image:@"bundle://Icon.png"

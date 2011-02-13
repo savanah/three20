@@ -78,6 +78,14 @@
 		6E7F97A9118E37C700443B46 /* libThree20.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7F977E118E37BB00443B46 /* libThree20.a */; };
 		6E94C6AD116D98220012B12C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E94C6AB116D98220012B12C /* Default.png */; };
 		6E94C6AE116D98220012B12C /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E94C6AC116D98220012B12C /* Icon.png */; };
+		A97DA4FA130631E4006847D1 /* IconsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A97DA4F9130631E4006847D1 /* IconsViewController.m */; };
+		A97DA4FB130631E4006847D1 /* IconsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A97DA4F9130631E4006847D1 /* IconsViewController.m */; };
+		A9A9358F1308994900DF76E4 /* IconsTestStyleSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = A9A9358E1308994900DF76E4 /* IconsTestStyleSheet.m */; };
+		A9A935901308994900DF76E4 /* IconsTestStyleSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = A9A9358E1308994900DF76E4 /* IconsTestStyleSheet.m */; };
+		A9B4F67C1306FAF6000EB04B /* IconsTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B4F67B1306FAF6000EB04B /* IconsTestController.m */; };
+		A9B4F67D1306FAF6000EB04B /* IconsTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B4F67B1306FAF6000EB04B /* IconsTestController.m */; };
+		A9B4F6F91307310B000EB04B /* IconsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B4F6F81307310B000EB04B /* IconsTableViewCell.m */; };
+		A9B4F6FA1307310B000EB04B /* IconsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B4F6F81307310B000EB04B /* IconsTableViewCell.m */; };
 		BE1288310F8973CD00F65EA2 /* StyleTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1288300F8973CD00F65EA2 /* StyleTestController.m */; };
 		BE1289C20F91811E00F65EA2 /* mask.png in Resources */ = {isa = PBXBuildFile; fileRef = BE1289C10F91811E00F65EA2 /* mask.png */; };
 		BE1D843A0F8D104B00EC8BB8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE1D84390F8D104B00EC8BB8 /* QuartzCore.framework */; };
@@ -440,6 +448,14 @@
 		6E7F9964118E3A7600443B46 /* TTCatalog_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTCatalog_Prefix.pch; path = Headers/TTCatalog_Prefix.pch; sourceTree = "<group>"; };
 		6E94C6AB116D98220012B12C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Resources/Default.png; sourceTree = SOURCE_ROOT; };
 		6E94C6AC116D98220012B12C /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = ../Resources/Icon.png; sourceTree = SOURCE_ROOT; };
+		A97DA4F8130631E4006847D1 /* IconsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IconsViewController.h; sourceTree = "<group>"; };
+		A97DA4F9130631E4006847D1 /* IconsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IconsViewController.m; sourceTree = "<group>"; };
+		A9A9358D1308994900DF76E4 /* IconsTestStyleSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IconsTestStyleSheet.h; sourceTree = "<group>"; };
+		A9A9358E1308994900DF76E4 /* IconsTestStyleSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IconsTestStyleSheet.m; sourceTree = "<group>"; };
+		A9B4F67A1306FAF6000EB04B /* IconsTestController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IconsTestController.h; sourceTree = "<group>"; };
+		A9B4F67B1306FAF6000EB04B /* IconsTestController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IconsTestController.m; sourceTree = "<group>"; };
+		A9B4F6F71307310B000EB04B /* IconsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IconsTableViewCell.h; sourceTree = "<group>"; };
+		A9B4F6F81307310B000EB04B /* IconsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IconsTableViewCell.m; sourceTree = "<group>"; };
 		BE12882F0F8973CD00F65EA2 /* StyleTestController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StyleTestController.h; sourceTree = "<group>"; };
 		BE1288300F8973CD00F65EA2 /* StyleTestController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StyleTestController.m; sourceTree = "<group>"; };
 		BE1289C10F91811E00F65EA2 /* mask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mask.png; sourceTree = "<group>"; };
@@ -535,6 +551,7 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				A97DA4F613061619006847D1 /* Icons */,
 				1D3623240D0F684500981E51 /* AppDelegate.h */,
 				1D3623250D0F684500981E51 /* AppDelegate.m */,
 				666E182E12944D23001C1D97 /* SplitCatalogController.h */,
@@ -733,6 +750,21 @@
 				6E7F9963118E3A6000443B46 /* UnitTests.xcconfig */,
 			);
 			name = Configurations;
+			sourceTree = "<group>";
+		};
+		A97DA4F613061619006847D1 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				A97DA4F8130631E4006847D1 /* IconsViewController.h */,
+				A97DA4F9130631E4006847D1 /* IconsViewController.m */,
+				A9B4F67A1306FAF6000EB04B /* IconsTestController.h */,
+				A9B4F67B1306FAF6000EB04B /* IconsTestController.m */,
+				A9B4F6F71307310B000EB04B /* IconsTableViewCell.h */,
+				A9B4F6F81307310B000EB04B /* IconsTableViewCell.m */,
+				A9A9358D1308994900DF76E4 /* IconsTestStyleSheet.h */,
+				A9A9358E1308994900DF76E4 /* IconsTestStyleSheet.m */,
+			);
+			name = Icons;
 			sourceTree = "<group>";
 		};
 		BEC7875C1040A405005C00CF /* Launcher */ = {
@@ -1354,6 +1386,10 @@
 				6E002567116A6D1A00D1F0CB /* TableWithShadowController.m in Sources */,
 				E46662FE127F91A4001A0F20 /* TableWithBannerController.m in Sources */,
 				666E183012944D23001C1D97 /* SplitCatalogController.m in Sources */,
+				A97DA4FB130631E4006847D1 /* IconsViewController.m in Sources */,
+				A9B4F67C1306FAF6000EB04B /* IconsTestController.m in Sources */,
+				A9B4F6F91307310B000EB04B /* IconsTableViewCell.m in Sources */,
+				A9A935901308994900DF76E4 /* IconsTestStyleSheet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1387,6 +1423,10 @@
 				664DFEE212663122004C20C2 /* TableWithShadowController.m in Sources */,
 				664B27F612846A220008D569 /* TableWithBannerController.m in Sources */,
 				666E183112944D23001C1D97 /* SplitCatalogController.m in Sources */,
+				A97DA4FA130631E4006847D1 /* IconsViewController.m in Sources */,
+				A9B4F67D1306FAF6000EB04B /* IconsTestController.m in Sources */,
+				A9B4F6FA1307310B000EB04B /* IconsTableViewCell.m in Sources */,
+				A9A9358F1308994900DF76E4 /* IconsTestStyleSheet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

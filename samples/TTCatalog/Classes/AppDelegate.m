@@ -3,6 +3,7 @@
 #import "CatalogController.h"
 #import "PhotoTest1Controller.h"
 #import "PhotoTest2Controller.h"
+#import "IconsTestController.h"
 #import "ImageTest1Controller.h"
 #import "TableImageTestController.h"
 #import "YouTubeTestController.h"
@@ -58,6 +59,11 @@
   [map            from: @"tt://photoTest2"
                 parent: @"tt://catalog"
       toViewController: [PhotoTest2Controller class]
+              selector: nil
+            transition: 0];
+  [map            from: @"tt://iconTest"
+                parent: @"tt://catalog"
+      toViewController: [IconsTestController class]
               selector: nil
             transition: 0];
 
