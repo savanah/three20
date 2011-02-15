@@ -599,10 +599,14 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (TTStyle*)launcherButtonImage:(UIControlState)state {
   TTStyle* style =
-    [TTBoxStyle styleWithMargin:UIEdgeInsetsMake(-7, 0, 11, 0) next:
-    [TTShapeStyle styleWithShape:[TTRoundedRectangleShape shapeWithRadius:8] next:
-    [TTImageStyle styleWithImageURL:nil defaultImage:nil contentMode:UIViewContentModeCenter
-                  size:CGSizeZero next:nil]]];
+     [TTShapeStyle styleWithShape:[TTRoundedRectangleShape shapeWithRadius:8] next:
+      [TTBoxStyle styleWithMargin:UIEdgeInsetsMake(0, 0, 0, 0)
+                          padding:UIEdgeInsetsMake(22, 22, 22, 22)
+                          minSize:CGSizeMake(0, 0)
+                         position:TTPositionStatic next:
+      [TTImageStyle styleWithImageURL:nil defaultImage:nil contentMode:UIViewContentModeScaleAspectFit
+                                     size:CGSizeMake(57, 57) next:nil
+      ]]];
 
   if (state == UIControlStateHighlighted || state == UIControlStateSelected) {
       [style addStyle:
