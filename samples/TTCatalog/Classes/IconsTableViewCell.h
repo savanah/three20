@@ -14,8 +14,7 @@
 @protocol Icon <NSObject>
 @property (nonatomic, retain) NSString * name;
 @property (nonatomic, retain) NSString * imageURL;
-@property (nonatomic, retain) id target;
-@property (nonatomic) SEL targetAction;
+@property (nonatomic, retain) NSString * URL;
 @end
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////

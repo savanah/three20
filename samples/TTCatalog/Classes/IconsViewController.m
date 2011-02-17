@@ -9,7 +9,7 @@
 #import "IconsViewController.h"
 
 
-static CGFloat kRowHeight = 140;
+static CGFloat kRowHeight = 110;
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -44,6 +44,7 @@ static CGFloat kRowHeight = 140;
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (id)init {
   if (self = [self initWithNibName:nil bundle:nil]) {
+    //!!! do something or delete this -- sic 20110216
   }
 
   return self;

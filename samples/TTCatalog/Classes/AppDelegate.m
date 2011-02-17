@@ -4,6 +4,7 @@
 #import "PhotoTest1Controller.h"
 #import "PhotoTest2Controller.h"
 #import "IconsTestController.h"
+#import "DetailViewController.h"
 #import "ImageTest1Controller.h"
 #import "TableImageTestController.h"
 #import "YouTubeTestController.h"
@@ -175,6 +176,7 @@
               selector: nil
             transition: 0];
 
+  [map from:@"tt://icon/(initWithId:)" toViewController:[DetailViewController class]];
 
   if (![navigator restoreViewControllers]) {
     [navigator openURLAction:[TTURLAction actionWithURLPath:@"tt://catalog"]];

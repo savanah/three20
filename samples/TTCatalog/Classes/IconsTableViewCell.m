@@ -9,9 +9,9 @@
 #import "IconsTableViewCell.h"
 #import "Three20UI/TTLauncherButton.h"
 
-static const CGFloat kSpacing = 20;
-static const CGFloat kDefaultThumbSize = 75;
-static const CGFloat kLabelOffset = 65;
+static const CGFloat kSpacing = 15;
+static const CGFloat kDefaultThumbSize = 60;
+static const CGFloat kLabelOffset = 50;
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -56,7 +56,15 @@ static const CGFloat kLabelOffset = 65;
 #pragma mark -
 #pragma mark Private
 
-
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (void)buttonTapped:(TTButton*)button {
+  id<Icon> icon = [_icons objectAtIndex:button.tag];
+  
+  NSString * URL = icon.URL;
+  if(URL) {
+    TTOpenURL(URL);
+  }
+}
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (void)layoutIconViews {
@@ -101,24 +109,19 @@ static const CGFloat kLabelOffset = 65;
     [_buttons removeAllObjects];
     [_labels removeAllObjects];
 
-    TTStyle* style =
-      [TTBoxStyle styleWithMargin:UIEdgeInsetsMake(-7, 0, 11, 0) next:
-      [TTShapeStyle styleWithShape:[TTRoundedRectangleShape shapeWithRadius:8] next:
-      [TTImageStyle styleWithImageURL:nil defaultImage:nil contentMode:UIViewContentModeScaleToFill
-                    size:CGSizeZero next:nil]]];
-
+    int ordinal = 0;
     for(id<Icon> icon in icons) {
       TTButton * button = [TTButton buttonWithStyle:@"iconButtonImage:" title:icon.name];
       [button setImage:icon.imageURL forState:UIControlStateNormal];
+      button.tag = ordinal++;
 
-      [button addTarget:icon.target action:icon.targetAction
-            forControlEvents:UIControlEventTouchUpInside];
+      [button addTarget:self action:@selector(buttonTapped:) forControlEvents:UIControlEventTouchUpInside];
       [self.contentView addSubview:button];
       [_buttons addObject:button];
       
       UILabel* label = [[[UILabel alloc] init] autorelease];
       label.text = icon.name;
-      label.font = [UIFont boldSystemFontOfSize:10];
+      label.font = [UIFont boldSystemFontOfSize:9];
       label.backgroundColor = [UIColor clearColor];
       label.textColor = RGBCOLOR(81,95,122);
       label.shadowColor = [[UIColor whiteColor] colorWithAlphaComponent:0.6];
