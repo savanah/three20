@@ -461,6 +461,13 @@
 			remoteGlobalIDString = 66C34BF91266200600489E9A;
 			remoteInfo = "extThree20JSONUnitTests+SBJSON-Xcode3.2.5";
 		};
+		A99C613F13195DCE00E4BA1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A98BC261130A1370005F903C /* extThree20JSON.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 66C34BB91266200600489E9A /* extThree20JSON+YAJL-Xcode3.2.5 */;
+			remoteInfo = "extThree20JSON+YAJL-Xcode3.2.5";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -1133,6 +1140,7 @@
 				664DFF211266314B004C20C2 /* PBXTargetDependency */,
 				664DFF231266314B004C20C2 /* PBXTargetDependency */,
 				664DFF251266314B004C20C2 /* PBXTargetDependency */,
+				A99C614013195DCE00E4BA1E /* PBXTargetDependency */,
 			);
 			name = "TTCatalog-Xcode3.2.5";
 			productName = PhotoBrowser;
@@ -1639,6 +1647,11 @@
 			isa = PBXTargetDependency;
 			name = Three20;
 			targetProxy = 6E7F97AA118E37CE00443B46 /* PBXContainerItemProxy */;
+		};
+		A99C614013195DCE00E4BA1E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "extThree20JSON+YAJL-Xcode3.2.5";
+			targetProxy = A99C613F13195DCE00E4BA1E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
