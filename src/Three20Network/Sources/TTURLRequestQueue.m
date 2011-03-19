@@ -342,7 +342,8 @@ static TTURLRequestQueue* gMainQueue = nil;
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (BOOL)sendRequest:(TTURLRequest*)request {
-  if ([self loadRequestFromCache:request]) {
+  BOOL readThroughCache = IS_MASK_SET(request.cachePolicy, TTURLRequestCachePolicyReadThrough);
+  if ([self loadRequestFromCache:request] && !readThroughCache) {
     return YES;
   }
 

@@ -57,7 +57,7 @@
   // This response is designed for NSData objects, so if we get anything else it's probably a
   // mistake.
   TTDASSERT([data isKindOfClass:[NSData class]]);
-  TTDASSERT(nil == _rootObject);
+  TT_RELEASE_SAFELY(_rootObject);
   NSError* err = nil;
   if ([data isKindOfClass:[NSData class]]) {
 #ifdef EXTJSON_SBJSON
